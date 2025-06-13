@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+.faqheader {
+    padding: 0 0 15px 15px;
+}
+.faqheading{
+    /* Ask Anything With Us */
+position: relative;
+width: 433px;
+height: 60px;
+/* left: 100px; */
+margin-left: 30px;
+top: 50px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 100px;
+/* identical to box height */
+color: #5d4ce6;
+}
+.faqsubheading{
+    /* Frequently Asked Questions */
+
+position: relative;
+width: 800px;
+height: 88px;
+/* left: 100px; */
+margin-left: 30px;
+top: 35px;
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 300;
+font-size: 55px;
+line-height: 88px;
+/* identical to box height */
+/*color: #001bcacf;;*/
+color: #5d4ce6;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 700px;
+    padding: 150px 50px 0px 50px;
+   /* border: 1px solid #ddd;*/
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    top: -110px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+/* What is Marking Scheme? */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: large;
+/* line-height: 48px; */
+
+/* identical to box height */
+
+color: #000000;
+
+
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-left: 30px;
+    /* This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequa, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: medium;
+line-height: 30px;
+background-color: #f7f7f7;
+    
+color: #646465; /* Default color */
+    transition: color 0.3s, background-color 0.3s;
+
+
+}
+
+.accordion-header .sign {
+    font-size: 1.2em;
+   /* font-weight: bold;*/
+   font-weight: bold;
+   color: #000000; /* Default color for sign */
+   transition: color 0.3s;
+}
+/* Style for active state */
+.accordion-header.active {
+    color: #646465; /* New color for active header */
+    background-color: #ffffff; /* New background color for active header */
+}
+
+.accordion-header.active .sign {
+    color: #646465; /* New color for active sign */
+}
+@media (max-width: 2000px){
+    .faqheading{
+      /*  position: sticky;*/
+        width: 380px;
+height: 50px;
+font-weight: 500;
+font-size: 30px;
+line-height: 40px;
+    }
+.faqsubheading{
+    font-weight: 400;
+font-size: 45px;
+width: 791px;
+height: 88px;
+}
+}
+@media (max-width: 1439px){
+    .faqheading{
+        width: 300px;
+height: 40px;
+font-weight: 450;
+font-size: 25px;
+line-height: 35px;
+    }
+    .faqsubheading{
+        font-weight: 380;
+    font-size: 40px;
+    width: 791px;
+    height: 88px;
+    }
+   }
+
+ @media (max-width: 1023px){
+    .faqheading{
+        width: 270px;
+height: 35px;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+    }
+
+    
+        /* Frequently Asked Questions */
+        .faqsubheading{
+            font-weight: 350;
+        font-size: 50px;
+        width: 791px;
+        height: 88px;
+        }
+  }
+@media (max-width: 768px){
+    .faqheading{
+        width: 270px;
+height: 35px;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+    }
+
+    .faqsubheading{
+        font-weight: 320;
+    font-size: 24px;
+    width: 400px;
+    height: 88px;
+    }
+}
+    .accordion {
+        padding: 100px 0px 0px 0px;
+
+    }
+ 
+
+@media (min-width: 481px) and (max-width: 941px){
+    .faqheading{
+        width: 220px;
+height: 30px;
+font-weight: 370;
+font-size: 17px;
+line-height: 25px;
+    }
+/* Frequently Asked Questions */
+.faqsubheading{
+    font-weight: 250;
+font-size: 35px;
+width: 791px;
+height: 88px;
+}
+    
+}

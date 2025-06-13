@@ -1,0 +1,114 @@
+/* Home Group Styling */
+.home0-group {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2:1 width ratio */
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100vh - 4em);
+  overflow: hidden;
+  gap: 1em;
+}
+
+/* Item 1: Always Square and Constrained to Available Height */
+.home0-group-item-1 {
+  width: 100%; /* Takes full column width */
+  height: calc(100vh - 4.5em); /* Ensuring square shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home0-group-item-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures image maintains square shape */
+  border-radius: 10px;
+}
+
+/* Item 2: Takes Remaining Space and is Scrollable */
+.home0-group-item-2 {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100vh - 4em)!important;
+  max-height: calc(100vh - 4em);
+}
+
+/* Mobile View: Stack Items Vertically */
+@media (max-width: 600px) {
+  .home0-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .home0-group-item-1 {
+      width: 90vw;
+      height: 90vw; /* Ensuring square shape */
+      max-width: 100%;
+      max-height: calc((100vh - 4em) / 2); /* Half of total height */
+  }
+
+  .home0-group-item-2 {
+    
+      width: 90vw;
+      max-height: calc((100vh - 4em) / 2); /* Half of total height */
+  }
+}
+
+/* For Medium Screens (481px to 941px) */
+@media (min-width: 481px) and (max-width: 941px) {
+  .home0-text1 {
+      font-size: 48px;
+  }
+
+  .home0-text2 {
+      font-size: 18px;
+  }
+
+  .slideshow {
+      margin-top: 3.5em;
+  }
+}
+
+/* For Large Screens (941px to 1440px) */
+@media (min-width: 941px) and (max-width: 1440px) {
+  .home0-text1 {
+      font-size: 60px;
+  }
+
+  .home0-text2 {
+      font-size: 20px;
+  }
+}
+
+/* Result Card Styling */
+.result-card {
+  width: 90%;
+  max-width: 600px;
+  background-color: #d7ddef;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px auto;
+  color: #333;
+  font-size: 16px;
+}
+
+.result-card p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.result-card a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.result-card a:hover {
+  color: #0040a8;
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* Apply Poppins font globally */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Aboutt Section */
+.about-section {
+    padding: 50px 0;
+    background-image:  url("../assets/images/header.svg"), linear-gradient(75deg, #5175d1 15%, #8285bb 55%);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align cards */
+    gap: 20px;
+    padding: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+.image {
+    width:50vw;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.image img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+   
+}
+.text {
+    max-width: 100%;
+}
+.text h2 {
+    color: #6674CC;
+    font-size: 24px;
+    margin: 0 0 10px;
+    font-family: 'DM Serif', sans-serif;
+}
+.text h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buttons button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    border:2px solid #5175d1;
+    background-color: white;
+    color:#5175d1;
+    cursor: pointer;
+}
+.buttons a{
+    text-decoration: none;
+    color: #5175d1;
+}
+.history{
+    color: white;
+}
+.buttons button:hover{
+    background-color: #5175d1;
+    color:white;
+    
+}
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+    .image {
+        width: 1000px;
+        /* margin-right: 20px; */
+        margin-bottom: 0;
+    }
+    .buttons {
+        flex-direction: row;
+    }
+}
+#page-content{
+    text-align:justify;
+}

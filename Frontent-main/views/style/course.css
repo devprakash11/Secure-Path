@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* Navbar styling (reuse from your homepage) */
+/* Apply Poppins font globally */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Event Section */
+.event-section {
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+.event-details h3{
+    font-family: 'DM Serif', sans-serif;
+}
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align cards */
+    gap: 20px;
+}
+
+.event-head{
+    display:flex;
+    justify-content: space-between;
+}
+.event-card {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-date {
+    background-color: #5d4ce6; /* Changed to your specified color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+.eventIcon{
+    height:100px;
+}
+.eventIcon img{
+    height: 100%;
+}
+.event-date .date {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.event-date .month {
+    font-size: 1.2rem;
+}
+
+.event-details {
+    text-align: left;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content:top; /* Align content from top to bottom */
+    flex-grow: 1; /* Allow it to take up available space */
+    margin-bottom: 3.5em;
+    height: 60%;
+}
+.event-details p{
+text-align:justify;
+}
+
+.event-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event-meta {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.event-meta i {
+    color: #5d4ce6; /* Changed to your specified color */
+    margin-right: 5px;
+}
+
+.action-buttons{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+
+}
+
+.btn3 {
+    position:relative;
+    background-color: #5d4ce6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+.btn3 a {
+    text-decoration: none;
+    position:relative;
+    background-color: #5d4ce6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+  
+.btn3:hover a {
+   background-color:rgb(59, 9, 113);
+  box-shadow: inset 0 2px 4px #2f065b;
+  transform: scale(0.97); /* gives a pressed feel */
+   
+}
+.btn3:hover {
+   background-color:rgb(59, 9, 113);
+  box-shadow: inset 0 2px 4px #2f065b;
+  transform: scale(0.97); /* gives a pressed feel */
+   
+}
+
+.pyqs-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.pyqs-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 5px;
+}
+
+.pyqs-dropdown:hover .pyqs-dropdown-content {
+    display: block;
+}
+
+.pyqs-dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pyqs-dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.pyqs-dropdown-content a:hover {
+    background-color: #f8f8f8;
+    color: #5d4ce6;
+    padding-left: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .event-container {
+        gap: 20px;
+    }
+    
+    .event-card {
+        max-width: calc(50% - 20px);
+    }
+}
+@media (max-width: 768px) {
+    .event-card {
+        max-width: calc(100% - 20px);
+    }
+    
+    .event-container {
+        flex-direction: column;
+        align-items: center; /* Center align cards */
+    }
+    
+    .event-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
