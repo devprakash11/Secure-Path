@@ -93,6 +93,8 @@ text-align:justify;
 }
 
 .action-buttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:left;
@@ -100,6 +102,8 @@ text-align:justify;
 }
 
 .btn3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
     position:relative;
     background-color: #5d4ce6;
     color: white;
