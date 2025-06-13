@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .err-container {
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 100px;
+            margin: 0;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color:  #6674CC;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color:  #6674CC;
+        }
+    </style>
+</head>
+<body>
+        <!-- Header -->
+        <header class="main-header">
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./assets/images/logo-01.png" alt="Organization Logo">
+                </a>
+            </div>
+      
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger-menu" id="hamburger-menu">
+              <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="navigation" id="nav-menu">
+              <div class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+                <ul class="navigation-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <div class="action-buttons">
+                    <button class="button donate-button">Donate</button>
+                    <button class="button notification-button">Notification</button>
+                </div>
+            </nav>
+          </header>
+    <div class="err-container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <a href="/" class="btn">Go Home</a>
+    </div>
+</body>
+</html>

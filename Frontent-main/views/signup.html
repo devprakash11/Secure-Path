@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Navprayas signup and login pages">
+    <title>Secure Path - Signup</title>
+    <link rel="icon" href="./assets/images/favicon-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style/signup.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/allstyle.css">
+    <link rel="stylesheet" href="./style/loader.css">
+</head>
+<body>
+    <div class="bg">
+        <!-- Header -->
+        <header class="main-header">
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./assets/images/Logo_Fire On Shield.png"alt="Organization Logo">
+                </a>
+            </div>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="navigation" id="nav-menu">
+                <div class="close-menu" id="close-menu">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="navigation-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="event.html">Courses</a></li>
+                    <li><a href="price.html">Price</a></li>
+                    <li><a href="gallery.html">Help</a></li>
+                </ul>
+            <div class="action-buttons">
+                <button class="button donate-button"><a href="./login.html">Login/ Sign Up</a></button>
+            </div>
+            </nav>
+        </header>
+        
+        <!-- Auth Container -->
+        <div class="auth-container">
+            <div class="auth-card">
+                <!-- Left Side - Image/Illustration -->
+                <div class="auth-image">
+                    <h2>Join the Secure Path Community</h2>
+                    <p>Be part of our journey to create positive change through education and humanitarian initiatives</p>
+                    <img src="https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg" alt="Community Illustration">
+                </div>
+                
+                <!-- Right Side - Form -->
+                <div class="auth-form-container">
+                    <!-- Tabs -->
+                    <div class="auth-tabs">
+                        <div class="auth-tab active" id="signup-tab">Sign Up</div>
+                    </div>
+                    
+                    <!-- Signup Form (Hidden by default) -->
+                    <div id="signup-form" class="auth-form-section">
+                        <h2 class="form-title">Create an Account</h2>
+                        <p class="form-subtitle">Join Secure Path to make a difference</p>
+                        
+                        <form class="auth-form">
+                            <div class="form-group">
+                                <label for="signup-name">Full Name</label>
+                                <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-email">Email Address</label>
+                                <input type="email" id="signup-email" placeholder="Enter your email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-phone">Phone Number</label>
+                                <input type="tel" id="signup-phone" placeholder="Enter your phone number" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-password">Password</label>
+                                <input type="password" id="signup-password" placeholder="Create a password" required>
+                                <i class="fas fa-eye password-toggle" id="signup-password-toggle"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="signup-confirm-password">Confirm Password</label>
+                                <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">I agree to the <a href="#" style="color: #5d4ce6;">Terms & Conditions</a> and <a href="#" style="color: #5d4ce6;">Privacy Policy</a></label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Create Account</button>
+                        </form>
+                        
+                        <div class="social-login">
+                            <span>Or sign up with</span>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <div class="social-icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="social-icon google">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="social-icon twitter">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="signup-link">
+                            Already have an account? <a href="./signIn.html" id="show-login">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Info Section -->
+                    <div class="footer-col">
+                        <img src="./assets/images/Logo_Fire On Shield.png" alt="Logo" class="footer-logo">
+                        <p>
+                            At Secure Path, we believe that software should make you happy. We are driven to create delightfully smart software with awesome human support so that you can work better, get smarter employees, and create happier customers.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+            
+                    <!-- Contact Us Section -->
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <div class="contact">
+                            <div class="phone">
+                                <i class="fa fa-phone"></i>
+                                <span> &nbsp;&nbsp;+91 12345-67890</span>
+                            </div>
+                            <div class="email">
+                                <i class="fa fa-envelope"></i>
+                                <span>&nbsp;&securepath@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Quick Links Section 1 -->
+                    <div class="footer-col">
+                        <h4>Key References</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Certificate</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+            
+                    <!-- Quick Links Section 2 -->
+                    <div class="footer-col">
+                        <h4>Important Links</h4>
+                        <ul>
+                            <li><a href="#">Donation</a></li>
+                            <li><a href="#">Result</a></li>
+                            <li><a href="#">Suggestion</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy;2025 by Secure Path. All Rights Reserved</p>
+            </div>
+        </div>
+        
+        <!-- Scroll to Top Button -->
+        <div class="scroll-to-top-container">
+            <button id="scrollToTopBtn" class="scroll-to-top-btn"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </div>
+
+    <script src="./scripts/menuToggle.js"></script>
+<script src="./scripts/scroll.js"></script>
+<script>
+  let slideIndex = 0;
+  function showSlides() {
+    let slides = document.querySelectorAll(".slide");
+    slides.forEach(slide => (slide.style.display = "none")); // Hide all slides
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1; // Loop back to the first slide
+    slides[slideIndex - 1].style.display = "block"; // Show current slide
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+  }
+
+  document.addEventListener("DOMContentLoaded", showSlides);
+</script>
+<script src="./scripts/load.js"></script>
+<script src="./scripts/signIn.js"></script>
+    
+</body>
+</html>
